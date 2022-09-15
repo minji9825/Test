@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+.clear:after{content: "";
+display: block; clear: both;
+}
+
+.부모1{
+    background-color: #DAE2B6;
+    width: 1000px; margin: 30px auto;
+    /* /margin: * 나와 다른 것 사이의 공간 */
+    padding: 20px; text-align: center;
+}
+.부모1 .자식1{
+    position: relative;
+    background-color: blue;
+    width: 32%; float: left;
+    padding: 40px 0;
+    margin-right: 2%;
+    background-image: url(https://miricanvas.zendesk.com/hc/article_attachments/900002336146/_________6_.png);
+    background-size: 119px;
+    height: 20px;
+}
+.부모1 .자식1 .나쁜자식{
+    background-color: blueviolet;
+    position: absolute;
+    left: 0; top: 0;
+    /* width: 100%; height: 100%; */
+    right: 0; bottom: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2020/09/09/02/12/smearing-5556288_960_720.jpg);
+    background-size: cover;
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.부모1 .자식1:hover .나쁜자식{
+    transform: scaleX(1);
+    /* 100% */
+}
+.부모1 .자식2{
+    position: relative;
+    background-color: pink;
+    width: 32%; float: left;
+    padding: 40px 0;
+    margin-right: 2%; 
+    height: 20px;
+    background-image: url(https://img1.daumcdn.net/thumb/R720x0/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fliveboard%2Fholapet%2F54dd26ef392b4611b0e83cdd383ad916.JPG);
+    background-size: cover;
+}
+.부모1 .자식2 .나쁜자식{
+    background-color: green;
+    position: absolute;
+    left: 0; top: 0;
+   /*  width: 100%; height: 100%; */
+   right: 0; bottom: 0;
+   background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-small-fresh-spring-promotion-about-hui-spring-poster-image_189014.jpg);
+    background-size: cover;
+   opacity: 0; 
+   /* 투명도를 나타냄, 1-100%, 0-안보임. */
+   transition: 0.3s;
+}
+.부모1 .자식2:hover .나쁜자식{
+    opacity: 1;
+}
+
+.부모1 .자식3 {
+    position: relative;
+    background-color: yellow;
+    width: 32%; float: left;
+    padding: 40px 0;
+    height: 20px;
+    background-image: url(https://newsimg.hankookilbo.com/cms/articlerelease/2020/09/13/c22a51dd-d1f8-48d2-82ad-f18a671078be.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.부모1 .자식3 .나쁜자식{
+    position: absolute;
+    background-color: green;
+    width: 100%; height: 100%;
+    right: -100%;
+    top: 0;
+    bottom: -100%; 
+    background-image: url(http://cdn.catholicnews.co.kr/news/photo/202001/22135_43951_5525.jpg);
+    background-size: cover;
+    transition: 0.3s;
+}
+.부모1 .자식3:hover .나쁜자식{
+   right: 0;
+}
+
+.부모2{
+    background-color: red;
+    width: 1000px; 
+    margin: 30px auto;
+    padding: 20px; 
+    text-align: center;
+    color: black;
+}
+.부모2 .강아지1{
+    float: left;
+    width: 49%;
+    background-color: #7A86B6;
+    padding: 40px 0; 
+    height: 20px; 
+    overflow: hidden;
+    position: relative;
+    margin-right: 2%;
+}
+.부모2 .강아지1 .나쁜자식{
+    background-color: blue; 
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-image:url(https://img.freepik.com/free-vector/wavy-pattern-background-black-doodle-vector-simple-design_53876-146788.jpg);
+    background-size: cover; 
+    transform: scale(0) rotate(720deg);
+    transition: 0.5s ease;
+}
+.부모2 .강아지1:hover .나쁜자식{
+    transform: scale(1.05); rotate: (0deg);
+}
+.부모2 .강아지2{
+    float: left;
+    width: 49%;
+    background-color: #F7EDDB;
+    padding: 40px 0;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.부모2 .강아지2 .나쁜자식{
+    background-color: blue; 
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-image:url(https://png.pngtree.com/thumb_back/fw800/background/20210907/pngtree-simple-pattern-white-chrysanthemum-pattern-image_810195.jpg);
+    background-size: cover; 
+    transform: scale(1.05) rotate(0deg);
+    transition: 0.5s ease;
+}
+.부모2 .강아지2:hover .나쁜자식{
+    transform: scale(0); rotate: (720deg);
+}
