@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>slick연결방법</title>
+    <!-- slick.js 참고 사이트 usage 복사-->
+    <!-- slick.cdn libraries 참고 사이트 -->
+    <!-- jquery는 움직이게 하는 것 jquery CDN 참고 사이트 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+</head>
+
+<body>
+    <div class="영역">
+        <div class="slick">
+            <div>your content</div>
+            <div>your content</div>
+            <div>your content</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slick').slick({
+                
+            });
+        });
+    </script>
+</body>
+
+</html>
